@@ -30,7 +30,7 @@ export class PokemonService {
     createPokemonDto.name = createPokemonDto.name.toLocaleLowerCase();
     
     try {
-      const pokemon = await this.pokemonModel.create( createPokemonDto )
+      const pokemon = await this.pokemonModel.create( createPokemonDto );
       return pokemon;
       
     } catch (error) {
